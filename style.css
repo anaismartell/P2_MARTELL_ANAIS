@@ -256,7 +256,7 @@ header p
 
 /* mediaqueries mobile*/
 
-@media all and (max-width: 1024px)
+@media screen and (max-width: 768px)
 {
     body
 	{
