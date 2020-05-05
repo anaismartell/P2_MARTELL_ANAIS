@@ -1,0 +1,488 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	display: flex;
+	font-family: robotoregular, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* fin header*/
+
+
+/* bloc_right */
+
+
+/*header*/
+
+
+header 
+{
+	margin-top: 8%;
+	margin-left: 10%;
+}
+
+
+header h1
+{
+	font-weight: normal;
+	font-size: 3.5em;
+	margin-bottom: 0;
+}
+
+.border
+{
+	border-bottom: solid;
+	border-color: purple;
+}
+
+.titlecolor
+{
+	color: purple;
+}
+
+header p
+{
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+#bloc_right
+{
+	background-color: rgb(246, 245, 247);
+}
+
+
+#maincontentright h2
+{
+	margin-left: 2%;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.titlecontent
+{
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	border-bottom: 2px purple solid;
+}
+
+.titlesection
+{
+	text-align: justify;
+	margin-left: 2%;
+	width: 100%;
+}
+
+.iconsright
+{
+	margin-top: 2%;
+	color: purple;
+}
+
+.container
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container i
+{
+	font-size: 10px;
+}
+
+.textcontent
+{
+	width: 50%;
+	margin-right: 10%;
+	text-align: justify;
+}
+
+.date 
+{
+	width: 30%;
+	list-style-type: none;
+	display: flex;
+	margin-left: 10%;
+	font-size: 0.9em;
+}
+
+.date i
+{
+	color: purple;
+	margin-top: 15px;
+}
+
+.date ul
+{
+	padding-left: 20px;
+}
+
+#maincontentright li
+{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+
+.structure
+{
+	text-align: left;
+}
+
+#formation
+{
+	margin-top: 10%;
+}
+
+#experiences, #recommandations
+{
+	margin-top: 3%;
+}
+
+
+.containerreco
+{
+	display: flex;
+	margin-bottom: 2%;
+}
+
+#firstrecommandation
+{
+	margin-left: 6%;
+	margin-right: 20%;
+}
+
+.name, .function, .phone
+{
+	font-family: sans-serif;
+}
+
+
+/*fin bloc_right
+
+/* bloc_left*/
+
+#bloc_left
+{
+	background-color: rgb(107, 77, 140);
+	background-repeat: repeat;
+	width: 100%;
+	color: white;
+}
+
+#bloc_left .photoanais
+{
+	width: 200px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#bloc_left h1
+{
+	color: black;
+	font-family: Arial;
+	font-weight: bold;
+	background-color: white;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#bloc_left li 
+{
+	list-style-type: none;
+	margin-left: 10px;
+	font-size: 1em;
+}
+
+#bloc_left a, a:hover
+{
+	color: white;
+}
+
+#aboutme
+{
+	margin-top: 100px;
+}
+
+#aboutme p
+{
+	padding: 20px;
+	text-align: justify;
+}
+
+#lobbies
+{
+	margin-top: 100%;
+	margin-bottom: 10%;
+}
+
+.icons
+{
+	display: flex;
+	justify-content: center;
+}
+
+.iconslobbies
+{
+	border-radius: 50%;
+	border: 2px white solid; 
+	padding: 0.5em;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+/* fin bloc_left*/
+
+
+
+/* mediaqueries mobile*/
+
+@media screen and (min-width: 200px and max-width: 1024px)
+{
+    body
+	{
+	flex-direction: column;
+	font-family: robotoregular, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	}
+
+header 
+{
+	position: absolute;
+	margin-top: -290%;
+	margin-left: 10%;
+	text-align: center;
+	color: white;
+}
+
+header h1
+{
+	font-weight: normal;
+	font-size: 3em;
+	margin-bottom: 0;
+}
+
+.border
+{
+	border-bottom: solid;
+	border-color: black;
+}
+
+.titlecolor
+{
+	color: black;
+}
+
+header p
+{
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+#maincontentright
+{
+	background-color: rgb(246, 245, 247);
+}
+
+
+#maincontentright h2
+{
+	margin-left: 2%;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.titlecontent
+{
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 2%;
+	border-bottom: 2px purple solid;
+}
+
+.titlesection
+{
+	text-align: justify;
+	margin-left: 2%;
+	width: 100%;
+}
+
+.iconsright
+{
+	margin-top: 2%;
+	color: purple;
+}
+
+.container
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.container i
+{
+	font-size: 10px;
+}
+
+.textcontent
+{
+	width: 50%;
+	margin-right: 10%;
+	text-align: left;
+}
+
+.date 
+{
+	width: 30%;
+	list-style-type: none;
+	display: flex;
+	margin-left: 10%;
+	font-size: 0.9em;
+}
+
+.date i
+{
+	color: purple;
+	margin-top: 15px;
+}
+
+.date ul
+{
+	padding-left: 20px;
+}
+
+#maincontentright li
+{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+#formation
+{
+	margin-top: 5%;
+}
+
+#experiences, #recommandations
+{
+	margin-top: 3%;
+}
+
+
+.containerreco
+{
+	display: flex;
+}
+
+#firstrecommandation
+{
+	margin-left: 6%;
+	margin-right: 10%;
+}
+
+.name, .function, .phone
+{
+	font-weight: bold;
+}
+
+/*fin bloc_right
+
+/* bloc_left*/
+
+#bloc_left
+{
+	background-color: rgb(107, 77, 140);
+	color: white;
+	width: auto;
+	height: 20%;
+}
+
+#bloc_left .photoanais
+{
+	width: 200px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#bloc_left h1
+{
+	color: black;
+	font-family: Arial;
+	font-weight: bold;
+	background-color: white;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#bloc_left li 
+{
+	list-style-type: none;
+	margin-left: 10px;
+	font-size: 0.8em;
+}
+
+
+#contact
+{
+	margin-top: 30%;
+}
+
+#aboutme
+{
+	margin-top: 50px;
+}
+
+#aboutme p
+{
+	padding: 20px;
+	text-align: justify;
+}
+
+#lobbies
+{
+	margin-top: 0;
+}
+
+
+.icons
+{
+	display: flex;
+	justify-content: center;
+}
+
+.iconslobbies
+{
+	border-radius: 50%;
+	border: 2px white solid; 
+	padding: 0.5em;
+	margin-right: 3%;
+	margin-left: 3%;
+}
+
+}
+
+
+
