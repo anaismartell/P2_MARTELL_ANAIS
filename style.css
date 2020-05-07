@@ -256,10 +256,10 @@ header p
 
 /* mediaqueries mobile*/
 
-@media screen and (max-width: 768px)
+@media screen and (max-width:768px) {
+
+body
 {
-    body
-	{
 	flex-direction: column;
 	font-family: robotoregular, Arial, sans-serif;
 	padding: 0;
