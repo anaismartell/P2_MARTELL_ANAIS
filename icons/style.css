@@ -1,0 +1,116 @@
+@font-face
+{
+	font-family: Calibri, Arial;
+}
+
+body
+{
+	display: flex;
+	font-family: Arial;
+	background-color: rgb(230, 251, 252);
+}
+
+/*header*/
+
+header
+{
+	height: 200px;
+	background-color: white;
+}
+
+header h1
+{
+	padding-top: 50px;
+	margin-left: 100px;
+}
+
+/* fin header*/
+
+#bloc_page h2
+{
+	margin-left: 100px;
+	font-weight: normal;
+}
+
+
+.container
+{
+	display: flex;
+    
+}
+
+
+.textcontent
+{
+	padding-right: 100px;
+	padding-left: 100px;
+
+}
+
+.date 
+{
+	padding-left:50px;
+	padding-right: 100px;
+	list-style-type: none;
+}
+
+
+#bloc_page li
+{
+	list-style-type: none;
+}
+
+
+
+/* aside elements*/
+
+#bloc_left
+{
+	background: url('images/backblack.jpg');
+	background-repeat: repeat;
+	width: 70%; 
+	color: white;
+}
+
+#bloc_left .photoanais
+{
+	width: 200px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+#bloc_left h1
+{
+	color: black;
+	background-color: white;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#bloc_left li 
+{
+	list-style-type: none;
+	margin-left: 10px;
+	font-size: 0.8em;
+}
+
+#aboutme
+{
+	margin-top: 100px;
+}
+
+#aboutme p
+{
+	padding: 20px;
+	text-align: justify;
+}
+
+#lobbies
+{
+	margin-top: 100px;
+}
+
+/* fin aside elements*/
+
