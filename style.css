@@ -19,13 +19,15 @@ body
 	margin: 0;
 }
 
+/* Bloc caché */
+
+#displaybloc
+{
+	display: none;
+}
 
 
 /* bloc_right */
-
-
-/*header*/
-
 
 header 
 {
@@ -62,7 +64,6 @@ header p
 {
 	background-color: rgb(246, 245, 247);
 }
-
 
 #maincontentright h2
 {
@@ -137,7 +138,6 @@ header p
 	font-weight: bold;
 }
 
-
 .structure
 {
 	text-align: left;
@@ -152,7 +152,6 @@ header p
 {
 	margin-top: 3%;
 }
-
 
 .containerreco
 {
@@ -170,8 +169,6 @@ header p
 {
 	font-family: sans-serif;
 }
-
-
 /*fin bloc_right
 
 /* bloc_left*/
@@ -193,7 +190,7 @@ header p
     padding-bottom: 10px;
 }
 
-#bloc_left h1
+.titleleft
 {
 	color: black;
 	font-family: Arial;
@@ -246,6 +243,7 @@ header p
 	padding: 0.5em;
 	margin-right: 3%;
 	margin-left: 3%;
+	margin-top: 5%;
 }
 
 /* fin bloc_left*/
@@ -256,216 +254,215 @@ header p
 
 @media screen and (max-width:360px) {
 
-body
-{
-	flex-direction: column;
-	font-family: robotoregular, Arial, sans-serif;
-	width: 100%;
-	padding: 0;
-	margin: 0;
+	body
+	{
+		flex-direction: column;
+		font-family: robotoregular, Arial, sans-serif;
+		width: 100%;
+		padding: 0;
+		margin: 0;
 	}
 
+	/* Bloc caché */
+	#displaybloc
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		text-align: center;
+	}
 
-header 
-{
-	color: black;
-	font-size: small;
-}
+	#firstline
+	{
+		font-size: 2.5em;
+		padding-bottom: 5%;
+	}
 
-header h1
-{
-	font-weight: normal;
-	margin-bottom: 0;
-}
+	#secondline
+	{
+		font-size: 1.2em;
+	}
 
+	#displaybloc p
+	{
+		font-style: 1.2em;
+	}
 
-.border
-{
-	border-bottom: solid;
-	border-color:purple;
-}
+	/* bloc_right */
 
-.titlecolor
-{
-	color:purple;
-}
+	header 
+	{
+		display: none;
+	}
 
-header p
-{
-	margin-top: 0;
-	font-size: 1.5em;
-}
+	#maincontentright
+	{
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(246, 245, 247);
+	}
 
-#maincontentright
-{
-	display: flex;
-	flex-direction: column;
-	background-color: rgb(246, 245, 247);
-}
+	#maincontentright h2
+	{
+		font-size: 1.2em;
+		font-weight: bold;
+	}
 
+	.titlecontent
+	{
+		display: flex;
+		border-bottom: 2px purple solid;
+	}
 
-#maincontentright h2
-{
-	font-size: 1.2em;
-	font-weight: bold;
-}
+	.titlesection
+	{
+		width: 100%;
+	}
 
-.titlecontent
-{
-	display: flex;
-	border-bottom: 2px purple solid;
-}
+	.iconsright
+	{
+		color: purple;
+	}
 
-.titlesection
-{
-	width: 100%;
-}
+	.container
+	{
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
 
-.iconsright
-{
-	color: purple;
-}
+	.structure
+	{
+		font-weight: bold;
+	}
 
-.container
-{
-	display: flex;
-	flex-direction: column;
-	width: auto;
-}
+	.textcontent
+	{
+		width: auto;
+		text-align: left;
+		font-size: 0.8em;
+		margin-left: 10%;
+	}
 
-.structure
-{
-	font-weight: bold;
-}
+	.date 
+	{
+		list-style-type: none;
+		display: flex;
+		width: 70%;
+		font-size: 0.9em;
+	}
 
-.textcontent
-{
-	width: auto;
-	text-align: left;
-	font-size: 0.8em;
-	margin-left: 10%;
-}
+	.date i
+	{
+		color: purple;
+		margin-top: 15px;
+	}
 
+	#formation
+	{
+		margin-top: 5%;
+	}
 
-.date 
-{
-	list-style-type: none;
-	display: flex;
-	font-size: 0.9em;
-}
+	#experiences, #recommandations
+	{
+		margin-top: 3%;
+	}
 
-.date i
-{
-	color: purple;
-	margin-top: 15px;
-}
+	.containerreco
+	{
+		flex-direction: column;
+		font-size: 0.8em;
+	}
 
+	#firstrecommandation
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-#formation
-{
-	margin-top: 5%;
-}
+	.name, .function, .phone
+	{
+		font-weight: bold;
+	}
 
-#experiences, #recommandations
-{
-	margin-top: 3%;
-}
+	/*fin bloc_right
 
-.containerreco
-{
-	flex-direction: column;
-	justify-items: left;
-	font-size: 0.8em;
-}
+	/* bloc_left*/
 
-#firstrecommandation
-{
-	margin-left: 0;
-	margin-right: 0;
-}
+	#bloc_left
+	{
+		background-color: rgb(107, 77, 140);
+		color: white;
+		width: 100%;
+	}
 
-.name, .function, .phone
-{
-	font-weight: bold;
-}
+	#bloc_left .photoanais
+	{
+		width: 200px;
+		margin-left: auto;
+   	 	margin-right: auto;
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+	}
 
-/*fin bloc_right
+	.titleleft
+	{
+		color: black;
+		font-family: Arial;
+		font-weight: bold;
+		background-color: white;
+		height: 30px;
+		padding-top: 10px;
+		text-align: center;
+	}
 
-/* bloc_left*/
+	#bloc_left li 
+	{
+		list-style-type: none;
+		margin-left: 10px;
+		font-size: 0.8em;
+	}
 
-#bloc_left
-{
-	background-color: rgb(107, 77, 140);
-	color: white;
-	width: 100%;
-}
+	#contact
+	{
+		margin-top: 5%;
+	}
 
-#bloc_left .photoanais
-{
-	width: 200px;
-	margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
+	#aboutme
+	{
+		margin-top:0;
+	}
 
-#bloc_left h1
-{
-	color: black;
-	font-family: Arial;
-	font-weight: bold;
-	background-color: white;
-	height: 30px;
-	padding-top: 10px;
-	text-align: center;
-}
+	#aboutme p
+	{
+		font-size: 0.8em;
+		padding-top: 0;
+		text-align: left;
+	}
 
-#bloc_left li 
-{
-	list-style-type: none;
-	margin-left: 10px;
-	font-size: 0.8em;
-}
+	#lobbies
+	{
+		margin-top: 0;
+	}
 
-#contact
-{
-	margin-top: 5%;
-}
+	.icons
+	{
+		display: flex;
+		justify-content: center;
+	}
 
-#aboutme
-{
-	margin-top:0;
-}
-
-#aboutme p
-{
-	font-size: 0.8em;
-	padding-top: 0;
-	text-align: left;
-}
-
-#lobbies
-{
-	margin-top: 0;
-}
-
-
-.icons
-{
-	display: flex;
-	justify-content: center;
-}
-
-.iconslobbies
-{
-	border-radius: 50%;
-	border: 2px white solid; 
-	padding: 0.5em;
-	margin-right: 3%;
-	margin-left: 3%;
-}
+	.iconslobbies
+	{
+		border-radius: 50%;
+		border: 2px white solid; 
+		padding: 0.5em;
+		margin-right: 3%;
+		margin-left: 3%;
+	}
 
 }
+
 
 /* mediaqueries grands téléphones*/
 
@@ -479,39 +476,42 @@ header p
 		width: 100%;
 		padding: 0;
 		margin: 0;
-		}
+	}
 	
-	
+	/* Bloc caché */
+
+	#displaybloc
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		text-align: center;
+	}
+
+	#firstline
+	{
+		font-size: 2.5em;
+		padding-bottom: 5%;
+	}
+
+	#secondline
+	{
+		font-size: 1.2em;
+	}
+
+	#displaybloc p
+	{
+		font-style: 1.2em;
+	}
+
+	/* bloc_right */
+
 	header 
 	{
-		color: black;
-		font-size: small;
+		display: none;
 	}
-	
-	header h1
-	{
-		font-weight: normal;
-		margin-bottom: 0;
-	}
-	
-	
-	.border
-	{
-		border-bottom: solid;
-		border-color:purple;
-	}
-	
-	.titlecolor
-	{
-		color: purple;
-	}
-	
-	header p
-	{
-		margin-top: 0;
-		font-size: 1.5em;
-	}
-	
+
 	#maincontentright
 	{
 		display: flex;
@@ -519,10 +519,8 @@ header p
 		background-color: rgb(246, 245, 247);
 	}
 	
-	
 	#maincontentright h2
 	{
-		
 		font-size: 1.2em;
 		font-weight: bold;
 	}
@@ -551,30 +549,30 @@ header p
 	}
 	
 	.structure
-{
-	font-weight: bold;
-}
+	{
+		font-weight: bold;
+	}
 
-.textcontent
-{
-	width: auto;
-	text-align: left;
-	font-size: 0.8em;
-	margin-left: 10%;
-}
+	.textcontent
+	{
+		width: auto;
+		text-align: left;
+		font-size: 0.8em;
+		margin-left: 10%;
+	}
 
-.date 
-{
-	list-style-type: none;
-	display: flex;
-	font-size: 0.9em;
-}
+	.date 
+	{
+		list-style-type: none;
+		display: flex;
+		width: 70%;
+		font-size: 0.9em;
+	}
 	
 	.date i
 	{
 		color: purple;
 	}
-	
 	
 	#formation
 	{
@@ -589,22 +587,21 @@ header p
 	.containerreco
 	{
 		flex-direction: column;
-		justify-items: left;
 		font-size: 0.8em;
-}
+	}
 
-#firstrecommandation
-{
-	margin-left: 0;
-	margin-right: 0;
-}
+	#firstrecommandation
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
 	
 	.name, .function, .phone
 	{
 		font-weight: bold;
 	}
 	
-	/*fin bloc_right
+	/*fin bloc_right*/
 	
 	/* bloc_left*/
 	
@@ -623,7 +620,7 @@ header p
 		padding-bottom: 10px;
 	}
 	
-	#bloc_left h1
+	.titleleft
 	{
 		color: black;
 		font-family: Arial;
@@ -640,7 +637,6 @@ header p
 		margin-left: 10px;
 		font-size: 0.8em;
 	}
-	
 	
 	#contact
 	{
@@ -661,9 +657,8 @@ header p
 	
 	#lobbies
 	{
-	margin-top: 0;
+		margin-top: 0;
 	}
-	
 	
 	.icons
 	{
@@ -679,8 +674,7 @@ header p
 		margin-right: 3%;
 		margin-left: 3%;
 	}
-	
-	}
+}
 	
 
 
@@ -697,23 +691,16 @@ header p
 		margin: 0;
 	}
 	
-	
-	/* fin header*/
-	
-	
 	/* bloc_right */
 	
-	
 	/*header*/
-	
 	
 	header 
 	{
 		margin-top: 8%;
 		margin-left: 10%;
 	}
-	
-	
+		
 	header h1
 	{
 		font-weight: normal;
@@ -742,7 +729,6 @@ header p
 	{
 		background-color: rgb(246, 245, 247);
 	}
-	
 	
 	#maincontentright h2
 	{
@@ -817,7 +803,6 @@ header p
 		font-weight: bold;
 	}
 	
-	
 	.structure
 	{
 		text-align: left;
@@ -832,7 +817,6 @@ header p
 	{
 		margin-top: 3%;
 	}
-	
 	
 	.containerreco
 	{
@@ -906,7 +890,7 @@ header p
 	#lobbies
 	{
 		margin-bottom: 10%;
-		margin-top: 250%;
+		margin-top: 20%;
 	}
 	
 	.icons
