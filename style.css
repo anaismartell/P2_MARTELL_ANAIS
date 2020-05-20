@@ -221,7 +221,7 @@ header p
 #aboutme p
 {
 	padding: 20px;
-	text-align: justify;
+	text-align: left;
 }
 
 #lobbies
