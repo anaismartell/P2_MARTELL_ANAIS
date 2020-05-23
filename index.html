@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="fontawesome/css/all.min.css">
         <meta name="viewport" content="width=device-width"/>
-        <title>CV Anaïs Martell: Développeur Web</title>
+        <title>CV Anaïs Martell: Développeuse Web</title>
+        <!--référencement facebook Open graph data -->
+    	<meta property="og:title" content="CV" />
+    	<meta property="og:type" content="website" />
+  		<meta property="og:url"content="https://anaismartell.github.io/P2_MARTELL_ANAIS/"/>
+  		<meta property="og:description"content="CV présentant Anaïs Martell un développeuse web freelance motivée, travailleuse et enthousiaste"/>
+   		<!--référencement navigateur-->
+    	<meta name="author" content="Anaïs Martell" />
+    	<meta name="publisher" content="Anaïs Martell" />
+    	<meta name="copyright" content="Copyright 2020 Anaïs MARTELL. All Rights reserved."/>
+    	<meta name="keywords" content="CV en ligne, Openclassrooms projet 2" />
+    	<meta name="description" content="CV de Anaïs Martell: une développeuse web freelance motivée, travailleuse et enthousiaste"/>
     </head>
 
     
@@ -18,9 +29,9 @@
         </div>
 
 	<!--beginning bloc left-->
-        <section id="bloc_left">
+        <div id="bloc_left">
              <div class='photoanais'><a href=''><img class ='photoanais' src='images/photoanais.png' alt='photoanais'></a></div>
-                <article id="contact">
+                <div id="contact">
                     <div class="titleleft">CONTACT</div>
                         <ul>
                             <li>Adresse</li>
@@ -36,15 +47,15 @@
                         </ul>
                         <ul>
                            <li>Linkdln</li>
-                            <li><a href="https://www.linkedin.com/in/ana%C3%AFs-martell-b8571412a/" target="_blank">Voir mon profil</a></li>
+                            <li><a href="https://www.linkedin.com/in/ana%C3%AFs-martell-b8571412a/" alt="profil linkedin anaïs martell" target="_blank">Voir mon profil</a></li>
                         </ul>
                         <ul>
                             <li>Skype</li>
                             <li>live:martell.anais</li>
                         </ul>
-                </article>
+                </div>
 
-                <article id="aboutme">
+                <div id="aboutme">
                     <div class="titleleft">A PROPOS DE MOI</div>
                         <p>
                         Diplômée de sciences politiques et de management, j'ai souhaitais m'orienter dans le métier du 
@@ -65,17 +76,17 @@
                         création de page web grâce à HTML, à leur mise en page grâce à CSS et à leur animation grâce à 
                         Javascript. Par ailleurs, je maîtrise la responsivité, la maintenance et la mise à jour des sites internet. 
                         Enfin, je travaille sous github avec la mise en place d'un système de versions avec Git. 
-                </article>
+                </div>
 
-                <article id="lobbies">
+                <div id="lobbies">
                         <div class="titleleft">LOISIRS</div>
                             <div class="icons">
                                 <div class="iconslobbies"><i class="fas fa-2x fa-plane-departure"> </i></div>
                                 <div class="iconslobbies"><i class="fas fa-2x fa-swimmer"></i></div>
                                 <div class="iconslobbies"><i class="fas fa-2x fa-film"> </i></div>
                             </div>
-                </article> 
-             </section>
+                </div> 
+             </div> 
     <!--fin bloc left-->
    
 
@@ -91,7 +102,7 @@
                 </header>
             </div>
 
-        <section id="maincontentright">
+        <div id="maincontentright">
 
         <!--beginning of section formation-->
             <section id="formation">
@@ -168,7 +179,7 @@
                         <h3 class="structure">SIFT SOLUTIONS</h3>
                         <p class="intitule">Product Manager</p>
                         <p class="description">Chargée de la conception et du développement d'un SaaS: 
-                        <a href="https://www.sift-solutions.com/" target="_blank">Sift Solutions</a>. 
+                        <a href="https://www.sift-solutions.com/" alt="sift solutions plateforme" target="_blank">Sift Solutions</a>. 
                         Missions de stratégie et de gestion de projet: définition de la vision produit, 
                         mise en place et coordination des évolutions avec les prestataires, formulation des retours, 
                         test et validation, rédaction du cahier des charges fonctionnel, pilotage et optimisation du 
@@ -249,6 +260,6 @@
                     </div>
                 </section><!--End of section recommandations-->
             </section><!--End of section maincontentright-->
-        </section><!--End of section bloc_right-->
+        </div><!--End of bloc_right-->
     </body>
 </html>
