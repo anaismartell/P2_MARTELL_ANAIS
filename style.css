@@ -15,8 +15,10 @@ body
 {
 	display: flex;
 	font-family: robotoregular, Arial, sans-serif;
-	padding: 0;
-	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* Bloc caché */
@@ -182,7 +184,7 @@ header p
 {
 	background-color: rgb(107, 77, 140);
 	background-repeat: repeat;
-	width: 100%;
+	width: 120%;
 	color: white;
 }
 
@@ -236,7 +238,7 @@ header p
 
 #lobbies
 {
-	margin-top: 100%;
+	margin-top: 120%;
 	margin-bottom: 10%;
 }
 
@@ -619,6 +621,7 @@ header p
 	{
 		background-color: rgb(107, 77, 140);
 		color: white;
+		width: 100%;
 	}
 	
 	#bloc_left .photoanais
