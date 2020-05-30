@@ -64,7 +64,7 @@ header p
 
 #bloc_right
 {
-	background-color:red;
+	background-color: rgb(246, 245, 247);
 }
 
 #maincontentright h2
@@ -183,9 +183,10 @@ header p
 #bloc_left
 {
 	background-color: rgb(107, 77, 140);
-	background-repeat: repeat;
+	/* background-repeat: repeat; */
 	width: 120%;
 	color: white;
+	position: relative;
 }
 
 #bloc_left .photoanais
@@ -238,8 +239,11 @@ header p
 
 #lobbies
 {
-	margin-top: 120%;
+	/*margin-top: 120%;*/
 	margin-bottom: 10%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .icons
